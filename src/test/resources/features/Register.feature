@@ -3,8 +3,8 @@ Feature: Register
   @valid-register
   Scenario: Register with valid data
     Given I am on the login page for register
-    When I fill the field "Elfrida Risda Tampubolon" in full name field with valid format
-    And I fill the field "risda123@gmail.com" in email field with valid format
+    When I fill the field "Risda Damayanti Tampubolon" in full name field with valid format
+    And I fill the field "risdadamayanti123@gmail.com" in email field with valid format
     And I fill the field "Akucantik" in password field with valid password
     And click the Register button
     Then I am on the login page
