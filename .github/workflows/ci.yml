@@ -22,10 +22,10 @@ jobs:
         run: mvn -B package --file pom.xml
 
   test:
-    name: Test Web
+    name: Test Mobile
     needs: build
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Run Web Test
+      - name: Run Mobile Test
         run: mvn clean verify
